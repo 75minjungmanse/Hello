@@ -2,14 +2,14 @@ package hello;
 
 public class WhileExample {
 	public static void main(String[] args) {
-		int i = 1;
-		while(true) {
-			if (i++ <= 5)
-				continue;
-			System.out.println(3+"*"+i+"="+3*i);
-			if(i == 9)
-				break;
-//			i++;
+		int i = 2;
+		while (i < 10) {
+			int j = 1;
+			while (j < 10) {
+				System.out.println(+i + "*" + j + "=" + i * j);
+				j++;
+			}
+			i++;
 		}
 	}
 
