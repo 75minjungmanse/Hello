@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+
+ul { width: 1000px; height: 20px; background: orange; list-style: none; padding: 10px }
+ul li { float: left; margin-right: 10px }					
+ul li a { font-size: 12px; color: black; text-decoration: none }

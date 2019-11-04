@@ -8,11 +8,9 @@ public interface BoardDBService {
 	public void insertBoard(BoardDB board); // 게시글 작성
 	public List<BoardDB> getBoardList(); // 전체 게시글 조회
 	public BoardDB getBoard(int boardNo); // 게시글 조회
-	public List<BoardDB> getReply(int boardBo); // 댓글 조회
+	public List<BoardDB> getReply(int boardNo); // 댓글 조회
 	public void insertReply(BoardDB board); // 댓글 추가
 	public void updateBoard(BoardDB board); // 게시글 수정
-	public void deleteBoard(int boardNo); // 게시글 삭제
-	
-	
+	public void deleteBoard(BoardDB board); // 게시글 삭제
 	
 }

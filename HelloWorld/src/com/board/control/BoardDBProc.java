@@ -81,6 +81,7 @@ public class BoardDBProc {
 
 		}
 	}
+	
 
 	public void getBoard() {
 		System.out.println("< 게시글 조회 >");
@@ -142,12 +143,21 @@ public class BoardDBProc {
 		board.setBoardNo(boardNo);
 		board.setTitle(title);
 		board.setContent(content);
+		board.setWriter(loginId);
 		
 		service.updateBoard(board);
 
 	}
 
 	public void deleteBoard() {
+			System.out.println("< 게시글 삭제 >");
+			System.out.println("삭제할 게시글 번호: ");
+			int boardNo = sc.nextInt(); sc.nextLine();
+			BoardDB board = new BoardDB();
+			board.setWriter(loginId);
+			board.setBoardNo(boardNo);
+			service.deleteBoard(board);
+		
 
 	}
 
