@@ -147,6 +147,7 @@ public class MemberDao {
 			pstmt.setString(1, dto.getName());
 			pstmt.setString(2, dto.getAddr());
 			pstmt.setString(3, dto.getId());
+			n = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
